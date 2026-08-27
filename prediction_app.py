@@ -12,12 +12,8 @@ state = {"message": "Choose the current inputs, then click Run predictions.", "e
 
 PAGE = """<!doctype html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>MLB Market Intelligence v2.9</title><style>
 body{font-family:Segoe UI,Arial;margin:0;background:#f4f7fb;color:#172033}.wrap{max-width:1180px;margin:32px auto;padding:0 20px}.panel{background:#fff;border-radius:12px;padding:22px;box-shadow:0 4px 18px #14213d18;margin-bottom:18px}h1{margin:0 0 5px}p{color:#536077}.grid{display:grid;grid-template-columns:230px 1fr;gap:12px;align-items:center}input{width:100%;box-sizing:border-box;padding:10px;border:1px solid #cbd4e1;border-radius:7px;font:inherit}button,.button{background:#1769e0;color:#fff;border:0;border-radius:8px;padding:11px 18px;font-weight:650;cursor:pointer;text-decoration:none}.secondary{background:#5b6678}.actions{margin-top:18px;display:flex;gap:10px}.status{padding:11px 14px;background:#eaf2ff}.error{background:#ffe9e9;color:#9d2020;white-space:pre-wrap}table{width:100%;border-collapse:collapse}th,td{padding:10px;border-bottom:1px solid #e4e9f0;text-align:left}th{background:#eef3fa}.empty{text-align:center;padding:35px;color:#667085}@media(max-width:700px){.grid{grid-template-columns:1fr}}
-</style></head><body><div class="wrap"><div class="panel"><h1>MLB Market Intelligence v2.9</h1><p>Run the next available slate and see qualifying edge picks.</p><form method="post" action="{{url_for('run_predictions')}}"><div class="grid">
-<label>Moneyline candidates (required)</label><input name="ml" value="{{paths.ml}}" required><label>Totals predictions (optional)</label><input name="ou" value="{{paths.ou}}"><label>Totals features (optional)</label><input name="features" value="{{paths.features}}"><label>Slate date (optional)</label><input name="date" placeholder="YYYY-MM-DD"></div><div class="actions"><button>Run predictions</button><a class="button secondary" href="{{url_for('open_output')}}">Open output folder</a></div></form></div>
+</style></head><body><div class="wrap"><div class="panel"><h1>MLB Market Intelligence v2.9</h1><p>Fetch the next MLB slate and current odds, run the model, and display qualifying edge picks.</p><form method="post" action="{{url_for('run_predictions')}}"><div class="actions"><button>Run next-game predictions</button><a class="button secondary" href="{{url_for('open_output')}}">Open output folder</a></div></form></div>
 {%if error%}<div class="panel status error">{{error}}</div>{%else%}<div class="panel status">{{message}}</div>{%endif%}<div class="panel"><h2>Edge picks</h2>{%if rows%}<table><thead><tr><th>Date</th><th>Game</th><th>Market</th><th>Pick</th><th>Line</th><th>Model probability</th><th>Edge</th><th>Tier</th></tr></thead><tbody>{%for r in rows%}<tr><td>{{r.date}}</td><td>{{r.game}}</td><td>{{r.market}}</td><td>{{r.pick}}</td><td>{{r.line}}</td><td>{{r.probability}}</td><td>{{r.edge}}</td><td>{{r.tier}}</td></tr>{%endfor%}</tbody></table>{%else%}<div class="empty">No output yet—or no selections passed the filters.</div>{%endif%}<p><small>Research output only. Verify sportsbook lines are current.</small></p></div></div></body></html>"""
-
-def default_paths():
-    return {"ml": str(ROOT/"inputs"/"ml_scored_candidates.csv"), "ou": str(ROOT/"inputs"/"ou_predictions.csv"), "features": str(ROOT/"inputs"/"features.csv")}
 
 def table_rows():
     if not OUTPUT.exists(): return []
@@ -28,18 +24,11 @@ def table_rows():
     return rows
 
 @app.get("/")
-def index(): return render_template_string(PAGE,paths=default_paths(),rows=table_rows(),**state)
+def index(): return render_template_string(PAGE,rows=table_rows(),**state)
 
 @app.post("/run")
 def run_predictions():
-    ml=Path(request.form.get("ml","").strip())
-    if not ml.exists(): state.update(message="",error=f"Required moneyline file not found:\n{ml}"); return redirect(url_for("index"))
-    command=[sys.executable,str(ROOT/"run_predictions.py"),"--ml",str(ml)]
-    for flag in ("ou","features"):
-        value=request.form.get(flag,"").strip()
-        if value and Path(value).exists(): command.extend([f"--{flag}",value])
-    day=request.form.get("date","").strip()
-    if day: command.extend(["--date",day])
+    command=[sys.executable,str(ROOT/"live_pipeline.py")]
     result=subprocess.run(command,cwd=ROOT,capture_output=True,text=True)
     if result.returncode: state.update(message="",error=(result.stderr or result.stdout or "Unknown error")[-5000:])
     else: state.update(message=f"Finished successfully. {len(table_rows())} edge pick(s) passed the filters.",error="")

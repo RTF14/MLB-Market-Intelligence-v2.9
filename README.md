@@ -37,17 +37,11 @@ Large generated `*_scored_candidates.csv` files and raw source datasets are inte
 
 ## Quick run
 
-1. Download or export the current candidate files into `inputs/`:
+1. Set `THE_ODDS_API_KEY` in your Windows environment. The app uses the existing value automatically.
 
-   - Required: `inputs/ml_scored_candidates.csv`
-   - Optional totals: `inputs/ou_predictions.csv`
-   - Optional totals features: `inputs/features.csv`
+2. Double-click **`START_APP.bat`** on Windows. (`RUN_PREDICTIONS.bat` opens the same app.)
 
-   The moneyline file must contain the historical training rows **and** the upcoming slate rows. The optional totals files follow the same convention. Input CSVs are ignored by Git so private/local data will not be committed accidentally.
-
-2. Double-click **`START_APP.bat`** on Windows. (`RUN_PREDICTIONS.bat` now opens the same app.)
-
-The first run creates a local Python environment and installs the dependencies. Your browser opens a private local page at `http://127.0.0.1:8765` with input fields, a **Run predictions** button, status messages, and an edge-picks table. Keep the launcher window open while using the page. The runner automatically selects the earliest game date on or after today. It also saves:
+The first run creates a local Python environment and installs the dependencies. Your browser opens a private local page at `http://127.0.0.1:8765`. Click **Run next-game predictions**. The app fetches the next MLB slate, refreshes completed games, fetches current odds, builds features, runs v2.9, and displays the edge-picks table. Keep the launcher window open while using the page. It also saves:
 
 - `output/EDGE_PICKS.md` — easy-to-read edge card
 - `output/edge_picks.csv` — spreadsheet-ready picks
@@ -59,4 +53,4 @@ To request a specific date from PowerShell:
 .\RUN_PREDICTIONS.bat --date 2026-08-28
 ```
 
-Important: v2.9 does not create its own current candidate panel from an odds API. It selects edges from the supplied scored candidates and predictions. If no selections pass its filters, the correct output is “No edge picks.” Always verify sportsbook lines are current.
+If no selections pass the filters, the correct output is “No edge picks.” Always verify sportsbook lines are current. The bundled baseline is trained through 2025 and is research software, not financial advice.

@@ -5,7 +5,6 @@ __pycache__/
 .env
 .env.*
 *_scored_candidates.csv
-data/
+/data/
 inputs/*.csv
 output/
-
