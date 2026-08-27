@@ -34,3 +34,29 @@ The main findings are in `reports/market_intelligence_v2_9_tests/RESULTS.md`. Su
 - 2026 through May 1
 
 Large generated `*_scored_candidates.csv` files and raw source datasets are intentionally excluded from Git history. They can be regenerated from the source datasets.
+
+## Quick run
+
+1. Download or export the current candidate files into `inputs/`:
+
+   - Required: `inputs/ml_scored_candidates.csv`
+   - Optional totals: `inputs/ou_predictions.csv`
+   - Optional totals features: `inputs/features.csv`
+
+   The moneyline file must contain the historical training rows **and** the upcoming slate rows. The optional totals files follow the same convention. Input CSVs are ignored by Git so private/local data will not be committed accidentally.
+
+2. Double-click **`RUN_PREDICTIONS.bat`** on Windows.
+
+The first run creates a local Python environment and installs the dependencies. The runner automatically selects the earliest game date on or after today. It then saves:
+
+- `output/EDGE_PICKS.md` — easy-to-read edge card
+- `output/edge_picks.csv` — spreadsheet-ready picks
+- `output/ml_orders.csv` and `output/ou_orders.csv` — full model orders
+
+To request a specific date from PowerShell:
+
+```powershell
+.\RUN_PREDICTIONS.bat --date 2026-08-28
+```
+
+Important: v2.9 does not create its own current candidate panel from an odds API. It selects edges from the supplied scored candidates and predictions. If no selections pass its filters, the correct output is “No edge picks.” Always verify sportsbook lines are current.

@@ -6,4 +6,6 @@ __pycache__/
 .env.*
 *_scored_candidates.csv
 data/
+inputs/*.csv
+output/
 
