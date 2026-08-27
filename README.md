@@ -37,6 +37,26 @@ Large generated `*_scored_candidates.csv` files and raw source datasets are inte
 
 ## Quick run
 
+### Run entirely on GitHub
+
+One-time setup:
+
+1. Open the repository on GitHub and select **Settings → Secrets and variables → Actions**.
+2. Click **New repository secret**.
+3. Name it exactly `THE_ODDS_API_KEY`, paste the key as its value, and save it.
+
+To generate predictions:
+
+1. Open the repository's **Actions** tab.
+2. Select **Run MLB predictions** in the left sidebar.
+3. Click **Run workflow**, then confirm with the green **Run workflow** button.
+4. Open the completed run to see the edge-picks table under **Summary**.
+5. Optionally download the `mlb-v2-9-predictions-...` artifact for all CSV and Markdown outputs.
+
+The secret is passed only to the prediction job and is not written into the repository or uploaded output.
+
+### Run on Windows
+
 1. Set `THE_ODDS_API_KEY` in your Windows environment. The app uses the existing value automatically.
 
 2. Double-click **`START_APP.bat`** on Windows. (`RUN_PREDICTIONS.bat` opens the same app.)

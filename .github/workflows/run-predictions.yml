@@ -1,0 +1,63 @@
+name: Run MLB predictions
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: mlb-live-predictions
+  cancel-in-progress: false
+
+jobs:
+  predict:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    env:
+      THE_ODDS_API_KEY: ${{ secrets.THE_ODDS_API_KEY }}
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: Install dependencies
+        run: python -m pip install -r requirements.txt
+
+      - name: Confirm secret is configured
+        shell: bash
+        run: |
+          if [ -z "$THE_ODDS_API_KEY" ]; then
+            echo "THE_ODDS_API_KEY repository secret is missing." >&2
+            exit 1
+          fi
+
+      - name: Run next-game predictions
+        run: python live_pipeline.py
+
+      - name: Add edge-picks table to run summary
+        if: always()
+        shell: bash
+        run: |
+          if [ -f output/EDGE_PICKS.md ]; then
+            cat output/EDGE_PICKS.md >> "$GITHUB_STEP_SUMMARY"
+          else
+            echo "# MLB v2.9 prediction run" >> "$GITHUB_STEP_SUMMARY"
+            echo "The pipeline did not produce an edge-picks table. Review the failed step above." >> "$GITHUB_STEP_SUMMARY"
+          fi
+
+      - name: Upload prediction outputs
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: mlb-v2-9-predictions-${{ github.run_number }}
+          path: output/
+          if-no-files-found: warn
+          retention-days: 30
+
