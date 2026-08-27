@@ -1,0 +1,5 @@
+market,model_group,model,rows,target,mae,rmse,brier,log_loss,accuracy_at_50,auc
+OU,OVER,closing_delta,1051,target_close_delta_for_side,0.3556614652308979,0.5347087306979236,,,,
+OU,UNDER,closing_delta,54,target_close_delta_for_side,0.389084769121319,0.47264510087017164,,,,
+OU,OVER,game,1051,target_game_win,,,0.26193966477453046,0.7201470100131768,0.483349191246432,0.47394780870434344
+OU,UNDER,game,54,target_game_win,,,0.3295503810555623,0.9093683161990795,0.4444444444444444,0.3576437587657784

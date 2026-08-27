@@ -1,0 +1,99 @@
+season,game_date,game_pk,market,side,home_team,away_team,bet_odds_timestamp,bet_snapshot_source,bet_line,selected_open_price,opening_total
+2024,2024-03-28,746821,OU,OVER,Chicago White Sox,Detroit Tigers,2024-03-28 12:00:00+00:00,HistoricalBasic,7.5,-122.0,7.5
+2024,2024-03-29,745682,OU,OVER,Oakland Athletics,Cleveland Guardians,2024-03-29 12:00:00+00:00,HistoricalBasic,7.5,-110.0,7.5
+2024,2024-04-01,745842,OU,OVER,New York Mets,Detroit Tigers,2024-04-01 12:00:00+00:00,HistoricalBasic,7.5,-105.0,7.5
+2024,2024-04-01,745600,OU,OVER,Philadelphia Phillies,Cincinnati Reds,2024-04-01 12:00:00+00:00,HistoricalBasic,8.0,-105.0,8.0
+2024,2024-04-01,744875,OU,OVER,Washington Nationals,Pittsburgh Pirates,2024-04-01 12:00:00+00:00,HistoricalBasic,8.5,-110.0,8.5
+2024,2024-04-02,745680,OU,OVER,Oakland Athletics,Boston Red Sox,2024-04-02 12:00:00+00:00,HistoricalBasic,7.5,-122.0,7.5
+2024,2024-04-08,745432,OU,OVER,San Diego Padres,Chicago Cubs,2024-04-08 12:00:00+00:00,HistoricalBasic,7.5,-114.0,7.5
+2024,2024-04-09,745433,OU,OVER,San Diego Padres,Chicago Cubs,2024-04-09 12:00:00+00:00,HistoricalBasic,8.0,-110.0,8.0
+2024,2024-04-15,745677,OU,OVER,Oakland Athletics,St. Louis Cardinals,2024-04-15 12:00:00+00:00,HistoricalBasic,7.5,-115.0,7.5
+2024,2024-04-19,746650,OU,OVER,Cleveland Guardians,Oakland Athletics,2024-04-19 12:00:00+00:00,HistoricalBasic,7.5,-122.0,7.5
+2024,2024-04-20,745590,OU,OVER,Philadelphia Phillies,Chicago White Sox,2024-04-20 12:00:00+00:00,HistoricalBasic,7.5,-122.0,7.5
+2024,2024-04-21,745759,OU,OVER,New York Yankees,Tampa Bay Rays,2024-04-21 12:00:00+00:00,HistoricalBasic,7.5,-122.0,7.5
+2024,2024-04-25,746646,OU,OVER,Cleveland Guardians,Boston Red Sox,2024-04-25 12:00:00+00:00,HistoricalBasic,7.5,-115.0,7.5
+2024,2024-04-26,746243,OU,OVER,Los Angeles Angels,Minnesota Twins,2024-04-26 12:00:00+00:00,HistoricalBasic,8.5,-115.0,8.5
+2024,2024-04-29,747211,OU,UNDER,Arizona Diamondbacks,Los Angeles Dodgers,2024-04-29 12:00:00+00:00,HistoricalBasic,10.0,-110.0,10.0
+2024,2024-05-03,746890,OU,OVER,Chicago Cubs,Milwaukee Brewers,2024-05-03 12:00:00+00:00,HistoricalBasic,7.5,-122.0,7.5
+2024,2024-05-04,745666,OU,OVER,Oakland Athletics,Miami Marlins,2024-05-04 12:00:00+00:00,HistoricalBasic,7.0,-122.0,7.0
+2024,2024-05-11,745505,OU,OVER,Pittsburgh Pirates,Chicago Cubs,2024-05-11 12:00:00+00:00,HistoricalBasic,7.5,-122.0,7.5
+2024,2024-05-13,746233,OU,OVER,Los Angeles Angels,St. Louis Cardinals,2024-05-13 12:00:00+00:00,HistoricalBasic,8.5,-115.0,8.5
+2024,2024-05-14,746235,OU,OVER,Los Angeles Angels,St. Louis Cardinals,2024-05-14 12:00:00+00:00,HistoricalBasic,7.5,-115.0,7.5
+2024,2024-05-15,746231,OU,OVER,Los Angeles Angels,St. Louis Cardinals,2024-05-15 12:00:00+00:00,HistoricalBasic,8.5,-110.0,8.5
+2024,2024-05-16,746881,OU,OVER,Chicago Cubs,Pittsburgh Pirates,2024-05-16 12:00:00+00:00,HistoricalBasic,7.5,-110.0,7.5
+2024,2024-05-17,745747,OU,OVER,New York Yankees,Chicago White Sox,2024-05-17 12:00:00+00:00,HistoricalBasic,7.5,-122.0,7.5
+2024,2024-05-17,745335,OU,OVER,San Francisco Giants,Colorado Rockies,2024-05-17 12:00:00+00:00,HistoricalBasic,7.0,-115.0,7.0
+2024,2024-05-18,746642,OU,OVER,Cleveland Guardians,Minnesota Twins,2024-05-18 12:00:00+00:00,HistoricalBasic,7.5,-120.0,7.5
+2024,2024-05-19,746880,OU,OVER,Chicago Cubs,Pittsburgh Pirates,2024-05-19 12:00:00+00:00,HistoricalBasic,7.5,-128.0,7.5
+2024,2024-05-19,745012,OU,OVER,Texas Rangers,Los Angeles Angels,2024-05-19 12:00:00+00:00,HistoricalBasic,8.5,-122.0,8.5
+2024,2024-05-22,745502,OU,OVER,Pittsburgh Pirates,San Francisco Giants,2024-05-22 12:00:00+00:00,HistoricalBasic,7.5,-120.0,7.5
+2024,2024-05-22,745743,OU,OVER,New York Yankees,Seattle Mariners,2024-05-22 12:00:00+00:00,HistoricalBasic,7.5,-124.0,7.5
+2024,2024-05-23,745500,OU,OVER,Pittsburgh Pirates,San Francisco Giants,2024-05-23 12:00:00+00:00,HistoricalBasic,8.5,-105.0,8.5
+2024,2024-05-25,746710,OU,UNDER,Cincinnati Reds,Los Angeles Dodgers,2024-05-25 12:00:00+00:00,HistoricalBasic,9.5,-115.0,9.5
+2024,2024-05-26,746230,OU,OVER,Los Angeles Angels,Cleveland Guardians,2024-05-26 12:00:00+00:00,HistoricalBasic,8.5,-115.0,8.5
+2024,2024-05-27,745338,OU,OVER,San Francisco Giants,Philadelphia Phillies,2024-05-27 12:00:00+00:00,HistoricalBasic,7.5,-122.0,7.5
+2024,2024-05-31,746635,OU,OVER,Cleveland Guardians,Washington Nationals,2024-05-31 12:00:00+00:00,HistoricalBasic,7.5,-115.0,7.5
+2024,2024-06-01,745251,OU,OVER,Seattle Mariners,Los Angeles Angels,2024-06-01 12:00:00+00:00,HistoricalBasic,7.5,-115.0,7.5
+2024,2024-06-01,746870,OU,OVER,Chicago Cubs,Cincinnati Reds,2024-06-01 12:00:00+00:00,HistoricalBasic,7.5,-115.0,7.5
+2024,2024-06-02,746871,OU,OVER,Chicago Cubs,Cincinnati Reds,2024-06-02 12:00:00+00:00,HistoricalBasic,7.5,-115.0,7.5
+2024,2024-06-02,745330,OU,OVER,San Francisco Giants,New York Yankees,2024-06-02 12:00:00+00:00,HistoricalBasic,7.5,-122.0,7.5
+2024,2024-06-04,746222,OU,OVER,Los Angeles Angels,San Diego Padres,2024-06-04 12:00:00+00:00,HistoricalBasic,8.5,-122.0,8.5
+2024,2024-06-04,745656,OU,OVER,Oakland Athletics,Seattle Mariners,2024-06-04 12:00:00+00:00,HistoricalBasic,7.5,-122.0,7.5
+2024,2024-06-05,746221,OU,OVER,Los Angeles Angels,San Diego Padres,2024-06-05 12:00:00+00:00,HistoricalBasic,8.0,-115.0,8.0
+2024,2024-06-05,745654,OU,OVER,Oakland Athletics,Seattle Mariners,2024-06-05 12:00:00+00:00,HistoricalBasic,7.5,-122.0,7.5
+2024,2024-06-07,745655,OU,OVER,Oakland Athletics,Toronto Blue Jays,2024-06-07 12:00:00+00:00,HistoricalBasic,7.5,-115.0,7.5
+2024,2024-06-12,745328,OU,OVER,San Francisco Giants,Houston Astros,2024-06-12 12:00:00+00:00,HistoricalBasic,7.0,-114.0,7.0
+2024,2024-06-16,745242,OU,OVER,Seattle Mariners,Texas Rangers,2024-06-16 12:00:00+00:00,HistoricalBasic,7.0,-115.0,7.0
+2024,2024-06-17,747108,OU,OVER,Atlanta Braves,Detroit Tigers,2024-06-17 12:00:00+00:00,HistoricalBasic,8.0,-115.0,8.0
+2024,2024-06-20,745645,OU,OVER,Oakland Athletics,Kansas City Royals,2024-06-20 12:00:00+00:00,HistoricalBasic,7.5,-115.0,7.5
+2024,2024-06-24,746218,OU,OVER,Los Angeles Angels,Oakland Athletics,2024-06-24 12:00:00+00:00,HistoricalBasic,8.5,-122.0,8.5
+2024,2024-06-25,746775,OU,UNDER,Chicago White Sox,Los Angeles Dodgers,2024-06-25 12:00:00+00:00,HistoricalBasic,9.5,-122.0,9.5
+2024,2024-06-28,745319,OU,OVER,San Francisco Giants,Los Angeles Dodgers,2024-06-28 12:00:00+00:00,HistoricalBasic,7.0,-122.0,7.0
+2024,2024-06-30,745243,OU,OVER,Seattle Mariners,Minnesota Twins,2024-06-30 12:00:00+00:00,HistoricalBasic,7.5,-122.0,7.5
+2024,2024-07-02,745647,OU,OVER,Oakland Athletics,Los Angeles Angels,2024-07-02 12:00:00+00:00,HistoricalBasic,7.5,-122.0,7.5
+2024,2024-07-05,745479,OU,OVER,Pittsburgh Pirates,New York Mets,2024-07-05 12:00:00+00:00,HistoricalBasic,7.5,-122.0,7.5
+2024,2024-07-05,745639,OU,OVER,Oakland Athletics,Baltimore Orioles,2024-07-05 12:00:00+00:00,HistoricalBasic,7.5,-124.0,7.5
+2024,2024-07-07,746122,OU,UNDER,Los Angeles Dodgers,Milwaukee Brewers,2024-07-07 12:00:00+00:00,HistoricalBasic,10.0,-122.0,10.0
+2024,2024-07-08,746692,OU,UNDER,Cincinnati Reds,Colorado Rockies,2024-07-08 12:00:00+00:00,HistoricalBasic,9.5,-122.0,9.5
+2024,2024-07-09,745316,OU,OVER,San Francisco Giants,Toronto Blue Jays,2024-07-09 12:00:00+00:00,HistoricalBasic,7.5,-110.0,7.5
+2024,2024-07-19,746618,OU,OVER,Cleveland Guardians,San Diego Padres,2024-07-19 12:00:00+00:00,HistoricalBasic,7.5,-115.0,7.5
+2024,2024-07-20,745880,OU,OVER,Minnesota Twins,Milwaukee Brewers,2024-07-20 12:00:00+00:00,HistoricalBasic,7.5,-120.0,7.5
+2024,2024-07-20,745638,OU,OVER,Oakland Athletics,Los Angeles Angels,2024-07-20 12:00:00+00:00,HistoricalBasic,8.0,-115.0,8.0
+2024,2024-08-06,746519,OU,UNDER,Colorado Rockies,New York Mets,2024-08-06 12:00:00+00:00,HistoricalBasic,11.5,-115.0,11.5
+2024,2024-08-07,745469,OU,OVER,Pittsburgh Pirates,San Diego Padres,2024-08-07 12:00:00+00:00,HistoricalBasic,7.5,-124.0,7.5
+2024,2024-08-11,745216,OU,OVER,Seattle Mariners,New York Mets,2024-08-11 12:00:00+00:00,HistoricalBasic,7.0,-122.0,7.0
+2024,2024-08-14,745301,OU,OVER,San Francisco Giants,Atlanta Braves,2024-08-14 12:00:00+00:00,HistoricalBasic,7.5,-122.0,7.5
+2024,2024-08-14,746677,OU,UNDER,Cincinnati Reds,St. Louis Cardinals,2024-08-14 12:00:00+00:00,HistoricalBasic,9.5,-122.0,9.5
+2024,2024-08-15,745298,OU,OVER,San Francisco Giants,Atlanta Braves,2024-08-15 12:00:00+00:00,HistoricalBasic,7.0,-110.0,7.0
+2024,2024-08-16,745462,OU,OVER,Pittsburgh Pirates,Seattle Mariners,2024-08-16 12:00:00+00:00,HistoricalBasic,6.5,-118.0,6.5
+2024,2024-08-17,745463,OU,OVER,Pittsburgh Pirates,Seattle Mariners,2024-08-17 12:00:00+00:00,HistoricalBasic,7.5,-122.0,7.5
+2024,2024-08-19,746351,OU,OVER,Houston Astros,Boston Red Sox,2024-08-19 12:00:00+00:00,HistoricalBasic,7.5,-122.0,7.5
+2024,2024-08-20,745295,OU,OVER,San Francisco Giants,Chicago White Sox,2024-08-20 12:00:00+00:00,HistoricalBasic,7.5,-115.0,7.5
+2024,2024-08-21,745297,OU,OVER,San Francisco Giants,Chicago White Sox,2024-08-21 12:00:00+00:00,HistoricalBasic,7.0,-120.0,7.0
+2024,2024-08-21,744812,OU,OVER,Washington Nationals,Colorado Rockies,2024-08-21 12:00:00+00:00,HistoricalBasic,8.5,-120.0,8.5
+2024,2024-08-22,745465,OU,OVER,Pittsburgh Pirates,Cincinnati Reds,2024-08-22 12:00:00+00:00,HistoricalBasic,7.0,-120.0,7.0
+2024,2024-08-26,745458,OU,OVER,Pittsburgh Pirates,Chicago Cubs,2024-08-26 12:00:00+00:00,HistoricalBasic,8.0,-115.0,8.0
+2024,2024-08-29,746670,OU,UNDER,Cincinnati Reds,Oakland Athletics,2024-08-29 12:00:00+00:00,HistoricalBasic,10.0,-115.0,10.0
+2024,2024-08-30,746353,OU,OVER,Houston Astros,Kansas City Royals,2024-08-30 12:00:00+00:00,HistoricalBasic,7.5,-115.0,7.5
+2024,2024-08-31,745296,OU,OVER,San Francisco Giants,Miami Marlins,2024-08-31 12:00:00+00:00,HistoricalBasic,7.5,-110.0,7.5
+2024,2024-09-01,745292,OU,OVER,San Francisco Giants,Miami Marlins,2024-09-01 12:00:00+00:00,HistoricalBasic,7.0,-120.0,7.0
+2024,2024-09-06,746832,OU,OVER,Chicago Cubs,New York Yankees,2024-09-06 12:00:00+00:00,HistoricalBasic,7.0,-115.0,7.0
+2024,2024-09-07,746829,OU,OVER,Chicago Cubs,New York Yankees,2024-09-07 12:00:00+00:00,HistoricalBasic,7.0,-120.0,7.0
+2024,2024-09-07,745456,OU,OVER,Pittsburgh Pirates,Washington Nationals,2024-09-07 12:00:00+00:00,HistoricalBasic,8.0,-115.0,8.0
+2024,2024-09-12,746591,OU,OVER,Cleveland Guardians,Tampa Bay Rays,2024-09-12 12:00:00+00:00,HistoricalBasic,7.5,-115.0,7.5
+2024,2024-09-13,745286,OU,OVER,San Francisco Giants,San Diego Padres,2024-09-13 12:00:00+00:00,HistoricalBasic,6.5,-120.0,6.5
+2024,2024-09-14,745284,OU,OVER,San Francisco Giants,San Diego Padres,2024-09-14 12:00:00+00:00,HistoricalBasic,7.5,-115.0,7.5
+2024,2024-09-14,745448,OU,OVER,Pittsburgh Pirates,Kansas City Royals,2024-09-14 12:00:00+00:00,HistoricalBasic,8.0,-115.0,8.0
+2024,2024-09-15,745693,OU,OVER,New York Yankees,Boston Red Sox,2024-09-15 12:00:00+00:00,HistoricalBasic,8.5,-120.0,8.5
+2024,2024-09-16,746179,OU,OVER,Los Angeles Angels,Chicago White Sox,2024-09-16 12:00:00+00:00,HistoricalBasic,8.0,-115.0,8.0
+2024,2024-09-17,745366,OU,OVER,San Diego Padres,Houston Astros,2024-09-17 12:00:00+00:00,HistoricalBasic,7.0,-125.0,7.0
+2024,2024-09-18,746582,OU,OVER,Cleveland Guardians,Minnesota Twins,2024-09-18 12:00:00+00:00,HistoricalBasic,7.5,-110.0,7.5
+2024,2024-09-20,745364,OU,OVER,San Diego Padres,Chicago White Sox,2024-09-20 12:00:00+00:00,HistoricalBasic,7.0,-120.0,7.0
+2024,2024-09-24,747149,OU,OVER,Arizona Diamondbacks,San Francisco Giants,2024-09-24 12:00:00+00:00,HistoricalBasic,8.0,-120.0,8.0
+2024,2024-09-24,746581,OU,OVER,Cleveland Guardians,Cincinnati Reds,2024-09-24 12:00:00+00:00,HistoricalBasic,7.5,-115.0,7.5
+2024,2024-09-25,745442,OU,OVER,Pittsburgh Pirates,Milwaukee Brewers,2024-09-25 12:00:00+00:00,HistoricalBasic,7.5,-115.0,7.5
+2024,2024-09-25,744795,OU,OVER,Washington Nationals,Kansas City Royals,2024-09-25 12:00:00+00:00,HistoricalBasic,7.5,-120.0,7.5
+2024,2024-09-27,746173,OU,OVER,Los Angeles Angels,Texas Rangers,2024-09-27 12:00:00+00:00,HistoricalBasic,7.5,-110.0,7.5
+2024,2024-09-28,744799,OU,OVER,Washington Nationals,Philadelphia Phillies,2024-09-28 12:00:00+00:00,HistoricalBasic,7.5,-115.0,7.5
+2024,2024-09-29,746820,OU,OVER,Chicago Cubs,Cincinnati Reds,2024-09-29 12:00:00+00:00,HistoricalBasic,7.0,-120.0,7.0
+2024,2024-09-29,746416,OU,OVER,Detroit Tigers,Chicago White Sox,2024-09-29 12:00:00+00:00,HistoricalBasic,7.5,-110.0,7.5

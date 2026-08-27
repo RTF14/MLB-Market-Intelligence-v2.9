@@ -1,0 +1,39 @@
+season,game_date,game_pk,market,side,home_team,away_team,bet_odds_timestamp,bet_snapshot_source,bet_line,selected_open_price,opening_total
+2026,2026-03-26,823325,OU,OVER,San Diego Padres,Detroit Tigers,2026-03-26 12:00:00+00:00,HistoricalBasic,7.0,-115.0,7.0
+2026,2026-03-28,823892,OU,OVER,Miami Marlins,Colorado Rockies,2026-03-28 12:00:00+00:00,HistoricalBasic,7.5,-115.0,7.5
+2026,2026-03-28,823488,OU,OVER,Philadelphia Phillies,Texas Rangers,2026-03-28 12:00:00+00:00,HistoricalBasic,7.5,-118.0,7.5
+2026,2026-03-29,823891,OU,OVER,Miami Marlins,Colorado Rockies,2026-03-29 12:00:00+00:00,HistoricalBasic,7.5,-120.0,7.5
+2026,2026-03-30,823809,OU,OVER,Milwaukee Brewers,Tampa Bay Rays,2026-03-30 12:00:00+00:00,HistoricalBasic,8.0,-110.0,8.0
+2026,2026-03-31,824699,OU,OVER,Chicago Cubs,Los Angeles Angels,2026-03-31 12:00:00+00:00,HistoricalBasic,7.0,-115.0,7.0
+2026,2026-03-31,824212,OU,OVER,Houston Astros,Boston Red Sox,2026-03-31 12:00:00+00:00,HistoricalBasic,7.5,-115.0,7.5
+2026,2026-04-01,823806,OU,OVER,Milwaukee Brewers,Tampa Bay Rays,2026-04-01 12:00:00+00:00,HistoricalBasic,7.0,-115.0,7.0
+2026,2026-04-01,823889,OU,OVER,Miami Marlins,Chicago White Sox,2026-04-01 12:00:00+00:00,HistoricalBasic,7.5,-118.0,7.5
+2026,2026-04-01,824536,OU,OVER,Cincinnati Reds,Pittsburgh Pirates,2026-04-01 12:00:00+00:00,HistoricalBasic,7.5,-115.0,7.5
+2026,2026-04-03,824377,OU,OVER,Colorado Rockies,Philadelphia Phillies,2026-04-03 12:00:00+00:00,HistoricalBasic,10.0,-115.0,10.0
+2026,2026-04-03,823406,OU,OVER,Pittsburgh Pirates,Baltimore Orioles,2026-04-03 12:00:00+00:00,HistoricalBasic,7.5,-120.0,7.5
+2026,2026-04-04,824295,OU,OVER,Detroit Tigers,St. Louis Cardinals,2026-04-04 12:00:00+00:00,HistoricalBasic,7.5,-105.0,7.5
+2026,2026-04-04,823730,OU,OVER,Minnesota Twins,Tampa Bay Rays,2026-04-04 12:00:00+00:00,HistoricalBasic,7.5,-110.0,7.5
+2026,2026-04-05,823729,OU,OVER,Minnesota Twins,Tampa Bay Rays,2026-04-05 12:00:00+00:00,HistoricalBasic,8.0,-115.0,8.0
+2026,2026-04-05,824379,OU,OVER,Colorado Rockies,Philadelphia Phillies,2026-04-05 12:00:00+00:00,HistoricalBasic,11.0,-115.0,11.0
+2026,2026-04-06,824376,OU,OVER,Colorado Rockies,Houston Astros,2026-04-06 12:00:00+00:00,HistoricalBasic,10.0,-118.0,10.0
+2026,2026-04-06,822832,OU,OVER,Toronto Blue Jays,Los Angeles Dodgers,2026-04-06 12:00:00+00:00,HistoricalBasic,8.5,-120.0,8.5
+2026,2026-04-07,822831,OU,OVER,Toronto Blue Jays,Los Angeles Dodgers,2026-04-07 12:00:00+00:00,HistoricalBasic,7.5,-115.0,7.5
+2026,2026-04-08,824455,OU,OVER,Cleveland Guardians,Kansas City Royals,2026-04-08 12:00:00+00:00,HistoricalBasic,7.0,-120.0,7.0
+2026,2026-04-08,824779,OU,OVER,Boston Red Sox,Milwaukee Brewers,2026-04-08 12:00:00+00:00,HistoricalBasic,7.5,-105.0,7.5
+2026,2026-04-09,823884,OU,OVER,Miami Marlins,Cincinnati Reds,2026-04-09 12:00:00+00:00,HistoricalBasic,7.5,-120.0,7.5
+2026,2026-04-11,822830,OU,OVER,Toronto Blue Jays,Minnesota Twins,2026-04-11 12:00:00+00:00,HistoricalBasic,7.5,-120.0,7.5
+2026,2026-04-11,824294,OU,OVER,Detroit Tigers,Miami Marlins,2026-04-11 12:00:00+00:00,HistoricalBasic,7.5,-105.0,7.5
+2026,2026-04-12,823804,OU,OVER,Milwaukee Brewers,Washington Nationals,2026-04-12 12:00:00+00:00,HistoricalBasic,7.5,-115.0,7.5
+2026,2026-04-14,824210,OU,OVER,Houston Astros,Colorado Rockies,2026-04-14 12:00:00+00:00,HistoricalBasic,8.5,-115.0,8.5
+2026,2026-04-15,823803,OU,OVER,Milwaukee Brewers,Toronto Blue Jays,2026-04-15 12:00:00+00:00,HistoricalBasic,7.5,-105.0,7.5
+2026,2026-04-18,823394,OU,OVER,Pittsburgh Pirates,Tampa Bay Rays,2026-04-18 12:00:00+00:00,HistoricalBasic,7.0,-115.0,7.0
+2026,2026-04-19,825100,OU,OVER,Arizona Diamondbacks,Toronto Blue Jays,2026-04-19 12:00:00+00:00,HistoricalBasic,8.0,-115.0,8.0
+2026,2026-04-20,824046,OU,OVER,Los Angeles Angels,Toronto Blue Jays,2026-04-20 12:00:00+00:00,HistoricalBasic,7.5,-115.0,7.5
+2026,2026-04-22,824449,OU,OVER,Cleveland Guardians,Houston Astros,2026-04-22 12:00:00+00:00,HistoricalBasic,8.0,-110.0,8.0
+2026,2026-04-24,822827,OU,OVER,Toronto Blue Jays,Cleveland Guardians,2026-04-24 12:00:00+00:00,HistoricalBasic,7.5,-115.0,7.5
+2026,2026-04-25,823960,OU,UNDER,Los Angeles Dodgers,Chicago Cubs,2026-04-25 12:00:00+00:00,HistoricalBasic,9.5,-120.0,9.5
+2026,2026-04-27,822825,OU,OVER,Toronto Blue Jays,Boston Red Sox,2026-04-27 12:00:00+00:00,HistoricalBasic,7.0,-130.0,7.0
+2026,2026-04-28,822823,OU,OVER,Toronto Blue Jays,Boston Red Sox,2026-04-28 12:00:00+00:00,HistoricalBasic,7.5,-118.0,7.5
+2026,2026-04-28,824447,OU,OVER,Cleveland Guardians,Tampa Bay Rays,2026-04-28 12:00:00+00:00,HistoricalBasic,7.5,-115.0,7.5
+2026,2026-04-29,825015,OU,UNDER,Athletics,Kansas City Royals,2026-04-29 12:00:00+00:00,HistoricalBasic,10.0,-115.0,10.0
+2026,2026-04-29,824525,OU,UNDER,Cincinnati Reds,Colorado Rockies,2026-04-29 12:00:00+00:00,HistoricalBasic,9.5,-120.0,9.5

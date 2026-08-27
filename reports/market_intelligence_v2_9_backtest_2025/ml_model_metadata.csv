@@ -1,0 +1,5 @@
+market,model_group,target,training_rows,oof_training_rows,training_hash,sklearn_version
+ML,FAVORITE,target_clv_win,10052,10052,d108177222599bc2bd0d5d8e101a37dae95fb8ba7324c70387b86dbc9fc8755c,1.8.0
+ML,UNDERDOG,target_clv_win,9362,9362,8a409549b2c6ab219471739b51881578ad04a15ead2b16a7b74a8be1e6c805b0,1.8.0
+ML,FAVORITE,target_game_win,10052,10052,d108177222599bc2bd0d5d8e101a37dae95fb8ba7324c70387b86dbc9fc8755c,1.8.0
+ML,UNDERDOG,target_game_win,9362,9362,8a409549b2c6ab219471739b51881578ad04a15ead2b16a7b74a8be1e6c805b0,1.8.0

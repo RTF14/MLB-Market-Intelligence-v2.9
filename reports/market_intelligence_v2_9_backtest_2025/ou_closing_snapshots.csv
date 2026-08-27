@@ -1,0 +1,128 @@
+season,game_date,game_pk,market,side,home_team,away_team,close_odds_timestamp,closing_snapshot_source,game_start_time_utc,clv_locked_before_game,close_line,selected_close_price,closing_total,clv_price_delta,clv_implied_probability_delta,clv_result
+2025,2025-03-27,778555,OU,OVER,Washington Nationals,Philadelphia Phillies,2025-03-27 23:55:00+00:00,HistoricalBasic,2025-03-27 23:59:00+00:00,True,7.0,-120.0,7.0,0.0,,PUSH
+2025,2025-03-27,778551,OU,OVER,St. Louis Cardinals,Minnesota Twins,2025-03-27 23:55:00+00:00,HistoricalBasic,2025-03-27 23:59:00+00:00,True,7.5,-105.0,7.5,0.5,,WIN
+2025,2025-03-27,778561,OU,OVER,Cincinnati Reds,San Francisco Giants,2025-03-27 23:55:00+00:00,HistoricalBasic,2025-03-27 23:59:00+00:00,True,8.0,-102.0,8.0,0.5,,WIN
+2025,2025-03-29,778537,OU,OVER,Tampa Bay Rays,Colorado Rockies,2025-03-29 23:55:00+00:00,HistoricalBasic,2025-03-29 23:59:00+00:00,True,8.0,-125.0,8.0,0.5,,WIN
+2025,2025-04-01,778498,OU,OVER,Cincinnati Reds,Texas Rangers,2025-04-01 23:55:00+00:00,HistoricalBasic,2025-04-01 23:59:00+00:00,True,8.5,-118.0,8.5,0.0,,PUSH
+2025,2025-04-02,778478,OU,OVER,Toronto Blue Jays,Washington Nationals,2025-04-02 23:55:00+00:00,HistoricalBasic,2025-04-02 23:59:00+00:00,True,8.0,-125.0,8.0,0.0,,PUSH
+2025,2025-04-02,778476,OU,OVER,San Diego Padres,Cleveland Guardians,2025-04-02 23:55:00+00:00,HistoricalBasic,2025-04-02 23:59:00+00:00,True,7.5,-115.0,7.5,0.0,,PUSH
+2025,2025-04-04,778458,OU,OVER,Detroit Tigers,Chicago White Sox,2025-04-04 23:55:00+00:00,HistoricalBasic,2025-04-04 23:59:00+00:00,True,7.0,-120.0,7.0,0.0,,PUSH
+2025,2025-04-05,778442,OU,OVER,Colorado Rockies,Athletics,2025-04-05 23:55:00+00:00,HistoricalBasic,2025-04-05 23:59:00+00:00,True,9.5,-102.0,9.5,0.5,,WIN
+2025,2025-04-05,778445,OU,OVER,Detroit Tigers,Chicago White Sox,2025-04-05 23:55:00+00:00,HistoricalBasic,2025-04-05 23:59:00+00:00,True,7.5,100.0,7.5,0.0,,PUSH
+2025,2025-04-08,778408,OU,OVER,Pittsburgh Pirates,St. Louis Cardinals,2025-04-08 23:55:00+00:00,HistoricalBasic,2025-04-08 23:59:00+00:00,True,6.5,-105.0,6.5,0.0,,PUSH
+2025,2025-04-08,778401,OU,OVER,Chicago Cubs,Texas Rangers,2025-04-08 23:55:00+00:00,HistoricalBasic,2025-04-08 23:59:00+00:00,True,8.0,-105.0,8.0,0.5,,WIN
+2025,2025-04-09,778399,OU,OVER,Tampa Bay Rays,Los Angeles Angels,2025-04-09 23:55:00+00:00,HistoricalBasic,2025-04-09 23:59:00+00:00,True,7.5,-130.0,7.5,0.0,,PUSH
+2025,2025-04-09,778389,OU,OVER,Pittsburgh Pirates,St. Louis Cardinals,2025-04-09 23:55:00+00:00,HistoricalBasic,2025-04-09 23:59:00+00:00,True,8.0,-102.0,8.0,0.0,,PUSH
+2025,2025-04-11,778363,OU,OVER,Minnesota Twins,Detroit Tigers,2025-04-11 23:55:00+00:00,HistoricalBasic,2025-04-11 23:59:00+00:00,True,7.5,-125.0,7.5,0.0,,PUSH
+2025,2025-04-11,778375,OU,OVER,Cleveland Guardians,Kansas City Royals,2025-04-11 23:55:00+00:00,HistoricalBasic,2025-04-11 23:59:00+00:00,True,6.5,-105.0,6.5,-0.5,,LOSS
+2025,2025-04-12,778354,OU,OVER,Miami Marlins,Washington Nationals,2025-04-12 23:55:00+00:00,HistoricalBasic,2025-04-12 23:59:00+00:00,True,7.5,-115.0,7.5,0.0,,PUSH
+2025,2025-04-12,778347,OU,OVER,St. Louis Cardinals,Philadelphia Phillies,2025-04-12 23:55:00+00:00,HistoricalBasic,2025-04-12 23:59:00+00:00,True,8.0,-110.0,8.0,0.5,,WIN
+2025,2025-04-13,778337,OU,OVER,Miami Marlins,Washington Nationals,2025-04-13 23:55:00+00:00,HistoricalBasic,2025-04-13 23:59:00+00:00,True,8.0,-115.0,8.0,0.5,,WIN
+2025,2025-04-13,778332,OU,OVER,Arizona Diamondbacks,Milwaukee Brewers,2025-04-13 23:55:00+00:00,HistoricalBasic,2025-04-13 23:59:00+00:00,True,8.0,-118.0,8.0,0.0,,PUSH
+2025,2025-04-15,778310,OU,OVER,Milwaukee Brewers,Detroit Tigers,2025-04-15 23:55:00+00:00,HistoricalBasic,2025-04-15 23:59:00+00:00,True,8.0,-110.0,8.0,0.5,,WIN
+2025,2025-04-16,778288,OU,OVER,San Diego Padres,Chicago Cubs,2025-04-16 23:55:00+00:00,HistoricalBasic,2025-04-16 23:59:00+00:00,True,8.0,-102.0,8.0,0.5,,WIN
+2025,2025-04-17,778291,OU,OVER,Miami Marlins,Arizona Diamondbacks,2025-04-17 23:55:00+00:00,HistoricalBasic,2025-04-17 23:59:00+00:00,True,8.5,-105.0,8.5,0.0,,PUSH
+2025,2025-04-18,778273,OU,OVER,Toronto Blue Jays,Seattle Mariners,2025-04-18 23:55:00+00:00,HistoricalBasic,2025-04-18 23:59:00+00:00,True,8.0,-115.0,8.0,0.5,,WIN
+2025,2025-04-18,778261,OU,OVER,Milwaukee Brewers,Athletics,2025-04-18 23:55:00+00:00,HistoricalBasic,2025-04-18 23:59:00+00:00,True,8.0,-105.0,8.0,0.5,,WIN
+2025,2025-04-19,778252,OU,UNDER,Philadelphia Phillies,Miami Marlins,2025-04-19 23:55:00+00:00,HistoricalBasic,2025-04-19 23:59:00+00:00,True,10.5,-110.0,10.5,-0.5,,LOSS
+2025,2025-04-20,778248,OU,OVER,Philadelphia Phillies,Miami Marlins,2025-04-20 23:55:00+00:00,HistoricalBasic,2025-04-20 23:59:00+00:00,True,8.0,-105.0,8.0,-0.5,,LOSS
+2025,2025-04-23,778198,OU,OVER,San Francisco Giants,Milwaukee Brewers,2025-04-23 23:55:00+00:00,HistoricalBasic,2025-04-23 23:59:00+00:00,True,6.5,-110.0,6.5,0.0,,PUSH
+2025,2025-04-24,778188,OU,OVER,Arizona Diamondbacks,Tampa Bay Rays,2025-04-24 23:55:00+00:00,HistoricalBasic,2025-04-24 23:59:00+00:00,True,8.5,-110.0,8.5,0.5,,WIN
+2025,2025-04-25,778181,OU,OVER,Colorado Rockies,Cincinnati Reds,2025-04-25 23:55:00+00:00,HistoricalBasic,2025-04-25 23:59:00+00:00,True,9.5,-102.0,9.5,0.5,,WIN
+2025,2025-04-26,778179,OU,OVER,Cleveland Guardians,Boston Red Sox,2025-04-26 23:55:00+00:00,HistoricalBasic,2025-04-26 23:59:00+00:00,True,7.5,-120.0,7.5,0.0,,PUSH
+2025,2025-04-26,778154,OU,OVER,Seattle Mariners,Miami Marlins,2025-04-26 23:55:00+00:00,HistoricalBasic,2025-04-26 23:59:00+00:00,True,7.5,-125.0,7.5,0.0,,PUSH
+2025,2025-04-27,778144,OU,OVER,Minnesota Twins,Los Angeles Angels,2025-04-27 23:55:00+00:00,HistoricalBasic,2025-04-27 23:59:00+00:00,True,7.5,-115.0,7.5,0.0,,PUSH
+2025,2025-04-29,778125,OU,OVER,Chicago White Sox,Milwaukee Brewers,2025-04-29 23:55:00+00:00,HistoricalBasic,2025-04-29 23:59:00+00:00,True,8.0,-102.0,8.0,0.5,,WIN
+2025,2025-04-29,778121,OU,OVER,Seattle Mariners,Los Angeles Angels,2025-04-29 23:55:00+00:00,HistoricalBasic,2025-04-29 23:59:00+00:00,True,7.5,-110.0,7.5,0.0,,PUSH
+2025,2025-05-02,778085,OU,OVER,Los Angeles Angels,Detroit Tigers,2025-05-02 23:55:00+00:00,HistoricalBasic,2025-05-02 23:59:00+00:00,True,7.5,-130.0,7.5,0.0,,PUSH
+2025,2025-05-09,777997,OU,OVER,Cleveland Guardians,Philadelphia Phillies,2025-05-09 23:55:00+00:00,HistoricalBasic,2025-05-09 23:59:00+00:00,True,7.5,-105.0,7.5,0.0,,PUSH
+2025,2025-05-10,777975,OU,OVER,Arizona Diamondbacks,Los Angeles Dodgers,2025-05-10 23:55:00+00:00,HistoricalBasic,2025-05-10 23:59:00+00:00,True,9.5,-115.0,9.5,0.5,,WIN
+2025,2025-05-10,777974,OU,OVER,Minnesota Twins,San Francisco Giants,2025-05-10 23:55:00+00:00,HistoricalBasic,2025-05-10 23:59:00+00:00,True,7.0,-105.0,7.0,0.0,,PUSH
+2025,2025-05-11,777971,OU,OVER,Cleveland Guardians,Philadelphia Phillies,2025-05-11 23:55:00+00:00,HistoricalBasic,2025-05-11 23:59:00+00:00,True,7.5,100.0,7.5,0.0,,PUSH
+2025,2025-05-14,777922,OU,OVER,Philadelphia Phillies,St. Louis Cardinals,2025-05-14 23:55:00+00:00,HistoricalBasic,2025-05-14 23:59:00+00:00,True,8.0,-110.0,8.0,0.5,,WIN
+2025,2025-05-17,777887,OU,OVER,Arizona Diamondbacks,Colorado Rockies,2025-05-17 23:55:00+00:00,HistoricalBasic,2025-05-17 23:59:00+00:00,True,10.0,-105.0,10.0,1.0,,WIN
+2025,2025-05-18,777872,OU,OVER,Chicago Cubs,Chicago White Sox,2025-05-18 23:55:00+00:00,HistoricalBasic,2025-05-18 23:59:00+00:00,True,7.5,-110.0,7.5,0.0,,PUSH
+2025,2025-05-27,777755,OU,OVER,Detroit Tigers,San Francisco Giants,2025-05-27 23:55:00+00:00,HistoricalBasic,2025-05-27 23:59:00+00:00,True,7.5,100.0,7.5,0.5,,WIN
+2025,2025-05-27,777742,OU,OVER,San Diego Padres,Miami Marlins,2025-05-27 23:55:00+00:00,HistoricalBasic,2025-05-27 23:59:00+00:00,True,8.0,-115.0,8.0,0.5,,WIN
+2025,2025-05-29,777727,OU,OVER,Toronto Blue Jays,Athletics,2025-05-29 23:55:00+00:00,HistoricalBasic,2025-05-29 23:59:00+00:00,True,8.5,-130.0,8.5,0.0,,PUSH
+2025,2025-05-29,777722,OU,OVER,Seattle Mariners,Washington Nationals,2025-05-29 23:55:00+00:00,HistoricalBasic,2025-05-29 23:59:00+00:00,True,7.5,-115.0,7.5,0.0,,PUSH
+2025,2025-06-01,777690,OU,OVER,Houston Astros,Tampa Bay Rays,2025-06-01 23:55:00+00:00,HistoricalBasic,2025-06-01 23:59:00+00:00,True,7.5,-118.0,7.5,0.0,,PUSH
+2025,2025-06-04,777641,OU,OVER,San Francisco Giants,San Diego Padres,2025-06-04 23:55:00+00:00,HistoricalBasic,2025-06-04 23:59:00+00:00,True,7.0,-120.0,7.0,0.0,,PUSH
+2025,2025-06-07,777608,OU,OVER,Cleveland Guardians,Houston Astros,2025-06-07 23:55:00+00:00,HistoricalBasic,2025-06-07 23:59:00+00:00,True,6.5,-125.0,6.5,-0.5,,LOSS
+2025,2025-06-07,777598,OU,OVER,San Francisco Giants,Atlanta Braves,2025-06-07 23:55:00+00:00,HistoricalBasic,2025-06-07 23:59:00+00:00,True,7.5,100.0,7.5,0.5,,WIN
+2025,2025-06-10,777563,OU,UNDER,Colorado Rockies,San Francisco Giants,2025-06-10 23:55:00+00:00,HistoricalBasic,2025-06-10 23:59:00+00:00,True,11.0,100.0,11.0,0.5,,WIN
+2025,2025-06-15,777495,OU,OVER,Seattle Mariners,Cleveland Guardians,2025-06-15 23:55:00+00:00,HistoricalBasic,2025-06-15 23:59:00+00:00,True,8.0,-115.0,8.0,0.5,,WIN
+2025,2025-06-15,777497,OU,OVER,Chicago Cubs,Pittsburgh Pirates,2025-06-15 23:55:00+00:00,HistoricalBasic,2025-06-15 23:59:00+00:00,True,7.0,-105.0,7.0,-0.5,,LOSS
+2025,2025-06-17,777472,OU,OVER,San Francisco Giants,Cleveland Guardians,2025-06-17 23:55:00+00:00,HistoricalBasic,2025-06-17 23:59:00+00:00,True,7.0,-120.0,7.0,0.0,,PUSH
+2025,2025-06-19,777464,OU,OVER,Detroit Tigers,Pittsburgh Pirates,2025-06-19 23:55:00+00:00,HistoricalBasic,2025-06-19 23:59:00+00:00,True,7.0,-115.0,7.0,0.0,,PUSH
+2025,2025-06-19,777451,OU,OVER,Detroit Tigers,Pittsburgh Pirates,2025-06-19 23:55:00+00:00,HistoricalBasic,2025-06-19 23:59:00+00:00,True,7.0,-115.0,7.0,0.0,,PUSH
+2025,2025-06-20,777436,OU,UNDER,Chicago Cubs,Seattle Mariners,2025-06-20 23:55:00+00:00,HistoricalBasic,2025-06-20 23:59:00+00:00,True,10.0,-105.0,10.0,-0.5,,LOSS
+2025,2025-06-21,777410,OU,UNDER,Colorado Rockies,Arizona Diamondbacks,2025-06-21 23:55:00+00:00,HistoricalBasic,2025-06-21 23:59:00+00:00,True,12.5,-110.0,12.5,-0.5,,LOSS
+2025,2025-06-22,777407,OU,UNDER,St. Louis Cardinals,Cincinnati Reds,2025-06-22 23:55:00+00:00,HistoricalBasic,2025-06-22 23:59:00+00:00,True,9.0,100.0,9.0,0.5,,WIN
+2025,2025-06-24,777380,OU,UNDER,Baltimore Orioles,Texas Rangers,2025-06-24 23:55:00+00:00,HistoricalBasic,2025-06-24 23:59:00+00:00,True,9.0,-102.0,9.0,1.0,,WIN
+2025,2025-06-26,777347,OU,OVER,San Francisco Giants,Miami Marlins,2025-06-26 23:55:00+00:00,HistoricalBasic,2025-06-26 23:59:00+00:00,True,7.5,-120.0,7.5,0.0,,PUSH
+2025,2025-06-26,777350,OU,OVER,Houston Astros,Philadelphia Phillies,2025-06-26 23:55:00+00:00,HistoricalBasic,2025-06-26 23:59:00+00:00,True,7.0,-115.0,7.0,0.0,,PUSH
+2025,2025-06-27,777332,OU,OVER,Arizona Diamondbacks,Miami Marlins,2025-06-27 23:55:00+00:00,HistoricalBasic,2025-06-27 23:59:00+00:00,True,8.0,-130.0,8.0,-0.5,,LOSS
+2025,2025-07-01,777293,OU,OVER,Miami Marlins,Minnesota Twins,2025-07-01 23:55:00+00:00,HistoricalBasic,2025-07-01 23:59:00+00:00,True,7.5,100.0,7.5,0.0,,PUSH
+2025,2025-07-01,777288,OU,OVER,Pittsburgh Pirates,St. Louis Cardinals,2025-07-01 23:55:00+00:00,HistoricalBasic,2025-07-01 23:59:00+00:00,True,7.0,-120.0,7.0,0.0,,PUSH
+2025,2025-07-02,777270,OU,OVER,Arizona Diamondbacks,San Francisco Giants,2025-07-02 23:55:00+00:00,HistoricalBasic,2025-07-02 23:59:00+00:00,True,8.5,-110.0,8.5,0.0,,PUSH
+2025,2025-07-03,777260,OU,OVER,Toronto Blue Jays,New York Yankees,2025-07-03 23:55:00+00:00,HistoricalBasic,2025-07-03 23:59:00+00:00,True,8.5,-105.0,8.5,0.0,,PUSH
+2025,2025-07-04,777246,OU,UNDER,Chicago Cubs,St. Louis Cardinals,2025-07-04 23:55:00+00:00,HistoricalBasic,2025-07-04 23:59:00+00:00,True,9.5,-120.0,9.5,0.5,,WIN
+2025,2025-07-06,777210,OU,UNDER,Athletics,San Francisco Giants,2025-07-06 23:55:00+00:00,HistoricalBasic,2025-07-06 23:59:00+00:00,True,10.0,-102.0,10.0,0.5,,WIN
+2025,2025-07-06,777219,OU,OVER,Chicago Cubs,St. Louis Cardinals,2025-07-06 23:55:00+00:00,HistoricalBasic,2025-07-06 23:59:00+00:00,True,7.0,-120.0,7.0,-0.5,,LOSS
+2025,2025-07-07,777202,OU,OVER,Houston Astros,Cleveland Guardians,2025-07-07 23:55:00+00:00,HistoricalBasic,2025-07-07 23:59:00+00:00,True,7.5,100.0,7.5,0.5,,WIN
+2025,2025-07-08,777189,OU,UNDER,Athletics,Atlanta Braves,2025-07-08 23:55:00+00:00,HistoricalBasic,2025-07-08 23:59:00+00:00,True,10.5,-105.0,10.5,-0.0,,PUSH
+2025,2025-07-09,777163,OU,OVER,San Francisco Giants,Philadelphia Phillies,2025-07-09 23:55:00+00:00,HistoricalBasic,2025-07-09 23:59:00+00:00,True,8.0,-115.0,8.0,0.5,,WIN
+2025,2025-07-11,777152,OU,UNDER,Athletics,Toronto Blue Jays,2025-07-11 23:55:00+00:00,HistoricalBasic,2025-07-11 23:59:00+00:00,True,10.5,-105.0,10.5,-0.0,,PUSH
+2025,2025-07-13,777125,OU,OVER,Houston Astros,Texas Rangers,2025-07-13 23:55:00+00:00,HistoricalBasic,2025-07-13 23:59:00+00:00,True,7.0,-102.0,7.0,0.0,,PUSH
+2025,2025-07-21,777053,OU,UNDER,Colorado Rockies,St. Louis Cardinals,2025-07-21 23:55:00+00:00,HistoricalBasic,2025-07-21 23:59:00+00:00,True,11.5,-102.0,11.5,0.5,,WIN
+2025,2025-07-22,777043,OU,OVER,Texas Rangers,Athletics,2025-07-22 23:55:00+00:00,HistoricalBasic,2025-07-22 23:59:00+00:00,True,7.0,-140.0,7.0,-0.5,,LOSS
+2025,2025-07-26,776991,OU,OVER,Houston Astros,Athletics,2025-07-26 23:55:00+00:00,HistoricalBasic,2025-07-26 23:59:00+00:00,True,7.5,-118.0,7.5,0.0,,PUSH
+2025,2025-07-30,776937,OU,OVER,Houston Astros,Washington Nationals,2025-07-30 23:55:00+00:00,HistoricalBasic,2025-07-30 23:59:00+00:00,True,8.0,-110.0,8.0,0.5,,WIN
+2025,2025-07-30,776933,OU,OVER,San Francisco Giants,Pittsburgh Pirates,2025-07-30 23:55:00+00:00,HistoricalBasic,2025-07-30 23:59:00+00:00,True,7.0,-110.0,7.0,0.0,,PUSH
+2025,2025-08-01,776925,OU,OVER,Miami Marlins,New York Yankees,2025-08-01 23:55:00+00:00,HistoricalBasic,2025-08-01 23:59:00+00:00,True,7.5,-122.0,7.5,0.0,,PUSH
+2025,2025-08-02,776905,OU,OVER,Cleveland Guardians,Minnesota Twins,2025-08-02 23:55:00+00:00,HistoricalBasic,2025-08-02 23:59:00+00:00,True,7.0,-118.0,7.0,-0.5,,LOSS
+2025,2025-08-03,776881,OU,UNDER,Athletics,Arizona Diamondbacks,2025-08-03 23:55:00+00:00,HistoricalBasic,2025-08-03 23:59:00+00:00,True,9.5,-110.0,9.5,1.0,,WIN
+2025,2025-08-03,776885,OU,UNDER,Los Angeles Angels,Chicago White Sox,2025-08-03 23:55:00+00:00,HistoricalBasic,2025-08-03 23:59:00+00:00,True,9.5,-106.0,9.5,0.5,,WIN
+2025,2025-08-05,776869,OU,OVER,Atlanta Braves,Milwaukee Brewers,2025-08-05 23:55:00+00:00,HistoricalBasic,2025-08-05 23:59:00+00:00,True,7.5,-102.0,7.5,-0.5,,LOSS
+2025,2025-08-05,776866,OU,OVER,Pittsburgh Pirates,San Francisco Giants,2025-08-05 23:55:00+00:00,HistoricalBasic,2025-08-05 23:59:00+00:00,True,7.5,108.0,7.5,0.0,,PUSH
+2025,2025-08-06,776859,OU,OVER,Detroit Tigers,Minnesota Twins,2025-08-06 23:55:00+00:00,HistoricalBasic,2025-08-06 23:59:00+00:00,True,8.5,-115.0,8.5,1.0,,WIN
+2025,2025-08-08,776834,OU,OVER,Atlanta Braves,Miami Marlins,2025-08-08 23:55:00+00:00,HistoricalBasic,2025-08-08 23:59:00+00:00,True,7.5,102.0,7.5,-0.5,,LOSS
+2025,2025-08-10,776794,OU,OVER,Arizona Diamondbacks,Colorado Rockies,2025-08-10 23:55:00+00:00,HistoricalBasic,2025-08-10 23:59:00+00:00,True,9.0,-112.0,9.0,0.0,,PUSH
+2025,2025-08-10,776800,OU,OVER,Texas Rangers,Philadelphia Phillies,2025-08-10 23:55:00+00:00,HistoricalBasic,2025-08-10 23:59:00+00:00,True,7.5,-102.0,7.5,0.0,,PUSH
+2025,2025-08-12,776771,OU,OVER,Milwaukee Brewers,Pittsburgh Pirates,2025-08-12 23:55:00+00:00,HistoricalBasic,2025-08-12 23:59:00+00:00,True,9.5,-136.0,9.5,3.0,,WIN
+2025,2025-08-12,776769,OU,OVER,Houston Astros,Boston Red Sox,2025-08-12 23:55:00+00:00,HistoricalBasic,2025-08-12 23:59:00+00:00,True,6.5,-106.0,6.5,-1.5,,LOSS
+2025,2025-08-13,776766,OU,OVER,Cleveland Guardians,Miami Marlins,2025-08-13 23:55:00+00:00,HistoricalBasic,2025-08-13 23:59:00+00:00,True,7.5,-115.0,7.5,0.0,,PUSH
+2025,2025-08-13,776753,OU,OVER,Houston Astros,Boston Red Sox,2025-08-13 23:55:00+00:00,HistoricalBasic,2025-08-13 23:59:00+00:00,True,8.0,-110.0,8.0,0.5,,WIN
+2025,2025-08-15,776735,OU,OVER,Toronto Blue Jays,Texas Rangers,2025-08-15 23:55:00+00:00,HistoricalBasic,2025-08-15 23:59:00+00:00,True,7.5,-102.0,7.5,0.0,,PUSH
+2025,2025-08-16,776711,OU,OVER,San Francisco Giants,Tampa Bay Rays,2025-08-16 23:55:00+00:00,HistoricalBasic,2025-08-16 23:59:00+00:00,True,8.0,-102.0,8.0,0.5,,WIN
+2025,2025-08-16,776718,OU,UNDER,Athletics,Los Angeles Angels,2025-08-16 23:55:00+00:00,HistoricalBasic,2025-08-16 23:59:00+00:00,True,10.5,-104.0,10.5,0.5,,WIN
+2025,2025-08-18,776694,OU,OVER,Pittsburgh Pirates,Toronto Blue Jays,2025-08-18 23:55:00+00:00,HistoricalBasic,2025-08-18 23:59:00+00:00,True,7.0,102.0,7.0,0.0,,PUSH
+2025,2025-08-19,776691,OU,OVER,Chicago Cubs,Milwaukee Brewers,2025-08-19 23:55:00+00:00,HistoricalBasic,2025-08-19 23:59:00+00:00,True,6.5,-110.0,6.5,-0.5,,LOSS
+2025,2025-08-26,776573,OU,UNDER,Athletics,Detroit Tigers,2025-08-26 23:55:00+00:00,HistoricalBasic,2025-08-26 23:59:00+00:00,True,11.0,-115.0,11.0,-0.0,,PUSH
+2025,2025-08-26,776584,OU,OVER,Cleveland Guardians,Tampa Bay Rays,2025-08-26 23:55:00+00:00,HistoricalBasic,2025-08-26 23:59:00+00:00,True,7.5,-118.0,7.5,0.0,,PUSH
+2025,2025-08-27,776559,OU,UNDER,Athletics,Detroit Tigers,2025-08-27 23:55:00+00:00,HistoricalBasic,2025-08-27 23:59:00+00:00,True,9.5,100.0,9.5,1.0,,WIN
+2025,2025-08-27,776563,OU,UNDER,Texas Rangers,Los Angeles Angels,2025-08-27 23:55:00+00:00,HistoricalBasic,2025-08-27 23:59:00+00:00,True,8.5,-106.0,8.5,1.0,,WIN
+2025,2025-08-29,776547,OU,OVER,Cleveland Guardians,Seattle Mariners,2025-08-29 23:55:00+00:00,HistoricalBasic,2025-08-29 23:59:00+00:00,True,7.5,-118.0,7.5,0.0,,PUSH
+2025,2025-08-30,776537,OU,OVER,Cleveland Guardians,Seattle Mariners,2025-08-30 23:55:00+00:00,HistoricalBasic,2025-08-30 23:59:00+00:00,True,7.5,100.0,7.5,0.0,,PUSH
+2025,2025-09-01,776506,OU,OVER,Chicago Cubs,Atlanta Braves,2025-09-01 23:55:00+00:00,HistoricalBasic,2025-09-01 23:59:00+00:00,True,7.5,-110.0,7.5,0.0,,PUSH
+2025,2025-09-01,776494,OU,OVER,San Diego Padres,Baltimore Orioles,2025-09-01 23:55:00+00:00,HistoricalBasic,2025-09-01 23:59:00+00:00,True,7.5,100.0,7.5,0.0,,PUSH
+2025,2025-09-04,776461,OU,OVER,Pittsburgh Pirates,Los Angeles Dodgers,2025-09-04 23:55:00+00:00,HistoricalBasic,2025-09-04 23:59:00+00:00,True,7.0,100.0,7.0,0.0,,PUSH
+2025,2025-09-05,776445,OU,OVER,St. Louis Cardinals,San Francisco Giants,2025-09-05 23:55:00+00:00,HistoricalBasic,2025-09-05 23:59:00+00:00,True,8.5,-104.0,8.5,1.0,,WIN
+2025,2025-09-05,776455,OU,UNDER,Chicago Cubs,Washington Nationals,2025-09-05 23:55:00+00:00,HistoricalBasic,2025-09-05 23:59:00+00:00,True,10.5,-108.0,10.5,-1.0,,LOSS
+2025,2025-09-06,776432,OU,OVER,Texas Rangers,Houston Astros,2025-09-06 23:55:00+00:00,HistoricalBasic,2025-09-06 23:59:00+00:00,True,7.0,-105.0,7.0,0.5,,WIN
+2025,2025-09-06,776440,OU,UNDER,Chicago Cubs,Washington Nationals,2025-09-06 23:55:00+00:00,HistoricalBasic,2025-09-06 23:59:00+00:00,True,8.5,100.0,8.5,1.0,,WIN
+2025,2025-09-08,776407,OU,OVER,San Diego Padres,Cincinnati Reds,2025-09-08 23:55:00+00:00,HistoricalBasic,2025-09-08 23:59:00+00:00,True,7.5,100.0,7.5,0.0,,PUSH
+2025,2025-09-09,776392,OU,OVER,San Diego Padres,Cincinnati Reds,2025-09-09 23:55:00+00:00,HistoricalBasic,2025-09-09 23:59:00+00:00,True,8.0,-102.0,8.0,0.5,,WIN
+2025,2025-09-09,776403,OU,OVER,Cleveland Guardians,Kansas City Royals,2025-09-09 23:55:00+00:00,HistoricalBasic,2025-09-09 23:59:00+00:00,True,7.5,-105.0,7.5,0.0,,PUSH
+2025,2025-09-12,776366,OU,OVER,Miami Marlins,Detroit Tigers,2025-09-12 23:55:00+00:00,HistoricalBasic,2025-09-12 23:59:00+00:00,True,7.0,100.0,7.0,0.5,,WIN
+2025,2025-09-12,776361,OU,OVER,Cleveland Guardians,Chicago White Sox,2025-09-12 23:55:00+00:00,HistoricalBasic,2025-09-12 23:59:00+00:00,True,7.5,-110.0,7.5,0.0,,PUSH
+2025,2025-09-13,776339,OU,OVER,Milwaukee Brewers,St. Louis Cardinals,2025-09-13 23:55:00+00:00,HistoricalBasic,2025-09-13 23:59:00+00:00,True,8.0,-102.0,8.0,0.5,,WIN
+2025,2025-09-15,776309,OU,OVER,Arizona Diamondbacks,San Francisco Giants,2025-09-15 23:55:00+00:00,HistoricalBasic,2025-09-15 23:59:00+00:00,True,9.0,-120.0,9.0,0.0,,PUSH
+2025,2025-09-16,777825,OU,OVER,Washington Nationals,Atlanta Braves,2025-09-16 23:55:00+00:00,HistoricalBasic,2025-09-16 23:59:00+00:00,True,7.0,100.0,7.0,0.0,,PUSH
+2025,2025-09-22,776221,OU,OVER,Atlanta Braves,Washington Nationals,2025-09-22 23:55:00+00:00,HistoricalBasic,2025-09-22 23:59:00+00:00,True,7.0,-120.0,7.0,0.0,,PUSH
+2025,2025-09-23,776207,OU,OVER,Los Angeles Angels,Kansas City Royals,2025-09-23 23:55:00+00:00,HistoricalBasic,2025-09-23 23:59:00+00:00,True,9.0,-110.0,9.0,0.5,,WIN
+2025,2025-09-24,776192,OU,OVER,Texas Rangers,Minnesota Twins,2025-09-24 23:55:00+00:00,HistoricalBasic,2025-09-24 23:59:00+00:00,True,7.0,-120.0,7.0,-0.5,,LOSS
+2025,2025-09-24,776202,OU,OVER,Cincinnati Reds,Pittsburgh Pirates,2025-09-24 23:55:00+00:00,HistoricalBasic,2025-09-24 23:59:00+00:00,True,7.0,-105.0,7.0,0.0,,PUSH
+2025,2025-09-25,776179,OU,OVER,Seattle Mariners,Colorado Rockies,2025-09-25 23:55:00+00:00,HistoricalBasic,2025-09-25 23:59:00+00:00,True,7.5,-130.0,7.5,-0.5,,LOSS
+2025,2025-09-28,776137,OU,OVER,San Francisco Giants,Colorado Rockies,2025-09-28 23:55:00+00:00,HistoricalBasic,2025-09-28 23:59:00+00:00,True,7.5,-110.0,7.5,0.0,,PUSH
