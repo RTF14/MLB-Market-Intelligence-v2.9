@@ -39,18 +39,21 @@ Large generated `*_scored_candidates.csv` files and raw source datasets are inte
 
 ### Run entirely on GitHub
 
+Latest results dashboard: **[Open MLB v2.9 Predictions](https://rtf14.github.io/MLB-Market-Intelligence-v2.9/)**
+
 One-time setup:
 
 1. Open the repository on GitHub and select **Settings → Secrets and variables → Actions**.
 2. Click **New repository secret**.
 3. Name it exactly `THE_ODDS_API_KEY`, paste the key as its value, and save it.
+4. Open **Settings → Pages** and set **Source** to **GitHub Actions**.
 
 To generate predictions:
 
 1. Open the repository's **Actions** tab.
 2. Select **Run MLB predictions** in the left sidebar.
 3. Click **Run workflow**, then confirm with the green **Run workflow** button.
-4. Open the completed run to see the edge-picks table under **Summary**.
+4. Open the [results dashboard](https://rtf14.github.io/MLB-Market-Intelligence-v2.9/) after the run finishes.
 5. Optionally download the `mlb-v2-9-predictions-...` artifact for all CSV and Markdown outputs.
 
 The secret is passed only to the prediction job and is not written into the repository or uploaded output.

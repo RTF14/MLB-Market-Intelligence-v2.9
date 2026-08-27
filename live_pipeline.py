@@ -1,6 +1,6 @@
 from __future__ import annotations
 
-import json, os, re, sys
+import html, json, os, re, sys
 from datetime import date, timedelta
 from pathlib import Path
 from urllib.parse import urlencode
@@ -122,6 +122,20 @@ def write_full_slate(frame: pd.DataFrame, target: str, path: Path) -> None:
         lines.append(view[["Game","Predicted winner","ML","Win probability","O/U prediction","Model total","O/U probability","Edge bets"]].to_markdown(index=False))
     lines.extend(["","Research output only; verify line freshness before acting.",""]); path.write_text("\n".join(lines),encoding="utf-8")
 
+def write_dashboard(frame: pd.DataFrame, target: str, site: Path) -> None:
+    site.mkdir(parents=True,exist_ok=True)
+    rows=[]
+    for _,r in frame.iterrows():
+        edge=bool(r.get("has_edge",False)); probability=_number(r.get("winner_probability")); ou_probability=_number(r.get("ou_probability")); model_total=_number(r.get("model_total"))
+        values=[r.get("game",""),r.get("predicted_winner",""),r.get("moneyline",""),f"{probability:.1%}" if pd.notna(probability) else "",r.get("ou_prediction",""),f"{model_total:.1f}" if pd.notna(model_total) else "",f"{ou_probability:.1%}" if pd.notna(ou_probability) else "",f"EDGE — {r.get('edge_bet','')}" if edge else "—"]
+        cells="".join(f"<td>{html.escape(str(v))}</td>" for v in values); rows.append(f"<tr class={'edge' if edge else 'standard'}>{cells}</tr>")
+    body="".join(rows) if rows else '<tr><td colspan="8" class="empty">No upcoming games were available.</td></tr>'
+    page=f'''<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>MLB v2.9 Predictions</title><style>
+body{{margin:0;background:#09111f;color:#e8eef8;font-family:Inter,Segoe UI,Arial,sans-serif}}.wrap{{max-width:1400px;margin:0 auto;padding:32px 20px}}.hero{{display:flex;justify-content:space-between;align-items:end;gap:20px;margin-bottom:22px}}h1{{margin:0;font-size:30px}}.date{{color:#9fb0ca;margin-top:6px}}.badge{{background:#17345e;color:#9dccff;padding:8px 12px;border-radius:999px;font-weight:700}}.card{{background:#111d2f;border:1px solid #263752;border-radius:14px;overflow:auto;box-shadow:0 14px 40px #0005}}table{{width:100%;border-collapse:collapse;min-width:980px}}th,td{{padding:13px 14px;text-align:left;border-bottom:1px solid #25344d}}th{{position:sticky;top:0;background:#17253a;color:#b9c8dc;font-size:12px;text-transform:uppercase;letter-spacing:.04em}}tr.edge{{background:#123b2b}}tr.edge td:last-child{{color:#72efa9;font-weight:800}}tr.standard:hover{{background:#15243a}}.footer{{display:flex;justify-content:space-between;gap:16px;color:#8495ae;font-size:13px;margin-top:16px}}a{{color:#77b7ff}}.empty{{text-align:center;padding:40px}}@media(max-width:700px){{.hero,.footer{{display:block}}.badge{{display:inline-block;margin-top:12px}}}}
+</style></head><body><main class="wrap"><div class="hero"><div><h1>MLB Market Intelligence v2.9</h1><div class="date">Full-slate predictions for {html.escape(target)}</div></div><div class="badge">Green rows = qualifying edge bets</div></div><div class="card"><table><thead><tr><th>Game</th><th>Predicted winner</th><th>ML</th><th>Win probability</th><th>O/U prediction</th><th>Model total</th><th>O/U probability</th><th>Edge bets</th></tr></thead><tbody>{body}</tbody></table></div><div class="footer"><span>Research output only. Verify sportsbook line freshness.</span><a href="all_game_predictions.csv">Download predictions CSV</a></div></main></body></html>'''
+    (site/"index.html").write_text(page,encoding="utf-8")
+    frame.to_csv(site/"all_game_predictions.csv",index=False)
+
 def main() -> None:
     api_key=os.environ.get("THE_ODDS_API_KEY")
     if not api_key: raise SystemExit("THE_ODDS_API_KEY is not set in this Windows account.")
@@ -142,7 +156,7 @@ def main() -> None:
     output=ROOT/"output"; output.mkdir(exist_ok=True)
     for name,frame in outputs.items(): frame.to_csv(output/f"{name}.csv",index=False)
     card=build_card(outputs,target); card.to_csv(output/"edge_picks.csv",index=False); write_markdown(card,target,output/"EDGE_PICKS.md")
-    full=build_full_slate(outputs,target); full.to_csv(output/"all_game_predictions.csv",index=False); write_full_slate(full,target,output/"ALL_GAME_PREDICTIONS.md")
+    full=build_full_slate(outputs,target); full.to_csv(output/"all_game_predictions.csv",index=False); write_full_slate(full,target,output/"ALL_GAME_PREDICTIONS.md"); write_dashboard(full,target,output/"site")
     print(f"Finished {target}: {len(full)} games and {len(card)} edge pick(s).")
 
 if __name__=="__main__": main()
