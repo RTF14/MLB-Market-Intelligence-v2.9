@@ -19,10 +19,10 @@ jobs:
 
     steps:
       - name: Check out repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
 
       - name: Set up Python
-        uses: actions/setup-python@v5
+        uses: actions/setup-python@v6
         with:
           python-version: "3.12"
           cache: pip
@@ -39,7 +39,15 @@ jobs:
           fi
 
       - name: Run next-game predictions
-        run: python live_pipeline.py
+        id: predictions
+        shell: bash
+        run: |
+          mkdir -p output
+          set +e
+          python live_pipeline.py 2>&1 | tee output/run.log
+          status=${PIPESTATUS[0]}
+          echo "exit_code=$status" >> "$GITHUB_OUTPUT"
+          exit "$status"
 
       - name: Add edge-picks table to run summary
         if: always()
@@ -49,15 +57,19 @@ jobs:
             cat output/EDGE_PICKS.md >> "$GITHUB_STEP_SUMMARY"
           else
             echo "# MLB v2.9 prediction run" >> "$GITHUB_STEP_SUMMARY"
-            echo "The pipeline did not produce an edge-picks table. Review the failed step above." >> "$GITHUB_STEP_SUMMARY"
+            echo "The pipeline did not produce an edge-picks table." >> "$GITHUB_STEP_SUMMARY"
+            if [ -f output/run.log ]; then
+              echo '```text' >> "$GITHUB_STEP_SUMMARY"
+              tail -n 80 output/run.log >> "$GITHUB_STEP_SUMMARY"
+              echo '```' >> "$GITHUB_STEP_SUMMARY"
+            fi
           fi
 
       - name: Upload prediction outputs
         if: always()
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v5
         with:
           name: mlb-v2-9-predictions-${{ github.run_number }}
           path: output/
           if-no-files-found: warn
           retention-days: 30
-
