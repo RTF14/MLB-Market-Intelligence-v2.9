@@ -45,9 +45,9 @@ Large generated `*_scored_candidates.csv` files and raw source datasets are inte
 
    The moneyline file must contain the historical training rows **and** the upcoming slate rows. The optional totals files follow the same convention. Input CSVs are ignored by Git so private/local data will not be committed accidentally.
 
-2. Double-click **`RUN_PREDICTIONS.bat`** on Windows.
+2. Double-click **`START_APP.bat`** on Windows. (`RUN_PREDICTIONS.bat` now opens the same app.)
 
-The first run creates a local Python environment and installs the dependencies. The runner automatically selects the earliest game date on or after today. It then saves:
+The first run creates a local Python environment and installs the dependencies. Your browser opens a private local page at `http://127.0.0.1:8765` with input fields, a **Run predictions** button, status messages, and an edge-picks table. Keep the launcher window open while using the page. The runner automatically selects the earliest game date on or after today. It also saves:
 
 - `output/EDGE_PICKS.md` — easy-to-read edge card
 - `output/edge_picks.csv` — spreadsheet-ready picks
