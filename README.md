@@ -55,6 +55,8 @@ To generate predictions:
 
 The secret is passed only to the prediction job and is not written into the repository or uploaded output.
 
+The Summary table includes every game on the slate with the predicted winner, moneyline, winner probability, Over/Under prediction, model total, and O/U probability. Qualifying bets are highlighted with `🟩 EDGE`. The downloadable artifact includes `all_game_predictions.csv`, `ALL_GAME_PREDICTIONS.md`, and the stricter edge-only outputs.
+
 ### Run on Windows
 
 1. Set `THE_ODDS_API_KEY` in your Windows environment. The app uses the existing value automatically.

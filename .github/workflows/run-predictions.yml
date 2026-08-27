@@ -53,8 +53,8 @@ jobs:
         if: always()
         shell: bash
         run: |
-          if [ -f output/EDGE_PICKS.md ]; then
-            cat output/EDGE_PICKS.md >> "$GITHUB_STEP_SUMMARY"
+          if [ -f output/ALL_GAME_PREDICTIONS.md ]; then
+            cat output/ALL_GAME_PREDICTIONS.md >> "$GITHUB_STEP_SUMMARY"
           else
             echo "# MLB v2.9 prediction run" >> "$GITHUB_STEP_SUMMARY"
             echo "The pipeline did not produce an edge-picks table." >> "$GITHUB_STEP_SUMMARY"

@@ -75,6 +75,53 @@ def attach_odds(predictions: pd.DataFrame, odds: pd.DataFrame) -> pd.DataFrame:
     p["total_line_open"]=p.total_line; p["total_price_over_open"]=p.total_price_over; p["total_price_under_open"]=p.total_price_under; p["home_moneyline_open"]=p.home_moneyline; p["away_moneyline_open"]=p.away_moneyline; p["total_line_move"]=0.0; p["total_line_source"]="the_odds_api_current_as_open"; p["odds_timestamp"]=p.get("market_timestamp_utc"); p["market_open_timestamp_utc"]=p.get("market_timestamp_utc"); p["game_date_odds"]=p.game_date
     return p
 
+def _number(value: object) -> float:
+    return pd.to_numeric(pd.Series([value]),errors="coerce").iloc[0]
+
+def _american(value: object) -> str:
+    value=_number(value)
+    return "" if pd.isna(value) else f"{value:+.0f}"
+
+def build_full_slate(outputs: dict[str,pd.DataFrame], target: str) -> pd.DataFrame:
+    ml=outputs.get("ml_scored_candidates",pd.DataFrame()).copy(); ou=outputs.get("ou_scored_candidates",pd.DataFrame()).copy()
+    ml=ml[ml.game_date.astype(str).eq(target)] if not ml.empty else ml; ou=ou[ou.game_date.astype(str).eq(target)] if not ou.empty else ou
+    ml_orders=outputs.get("ml_orders",pd.DataFrame()); ou_orders=outputs.get("ou_orders",pd.DataFrame())
+    ml_edges=set(zip(ml_orders.get("game_pk",pd.Series(dtype=object)).astype(str),ml_orders.get("side",pd.Series(dtype=object)).astype(str)))
+    ou_edges=set(zip(ou_orders.get("game_pk",pd.Series(dtype=object)).astype(str),ou_orders.get("side",pd.Series(dtype=object)).astype(str)))
+    ml_best={}
+    if not ml.empty:
+        probability="ml_game_probability" if "ml_game_probability" in ml else "model_probability"
+        for game_pk,group in ml.groupby("game_pk"):
+            ranked=group.assign(_p=pd.to_numeric(group[probability],errors="coerce")).sort_values(["_p","rank_score"],ascending=[False,False],na_position="last")
+            ml_best[str(game_pk)]=ranked.iloc[0]
+    ou_best={}
+    if not ou.empty:
+        for game_pk,group in ou.groupby("game_pk"):
+            ranked=group.assign(_p=pd.to_numeric(group.get("ou_game_probability"),errors="coerce")).sort_values(["_p","rank_score"],ascending=[False,False],na_position="last")
+            ou_best[str(game_pk)]=ranked.iloc[0]
+    rows=[]
+    for game_pk in sorted(set(ml_best)|set(ou_best)):
+        m=ml_best.get(game_pk); o=ou_best.get(game_pk); base=m if m is not None else o
+        ml_side=str(m.get("side","")) if m is not None else ""; ou_side=str(o.get("side","")) if o is not None else ""
+        winner=(m.get("display_side") if m is not None else "") or ((m.get("home_team") if ml_side=="HOME" else m.get("away_team")) if m is not None else "")
+        total=_number(o.get("opening_total",o.get("total_line",np.nan))) if o is not None else np.nan
+        model_total=_number(o.get("model_total",np.nan)) if o is not None else np.nan
+        edge_labels=[]
+        if (game_pk,ml_side) in ml_edges: edge_labels.append(f"ML: {winner}")
+        if (game_pk,ou_side) in ou_edges: edge_labels.append(f"OU: {ou_side} {total:g}")
+        rows.append({"date":target,"game":f"{base.get('away_team','')} @ {base.get('home_team','')}","predicted_winner":winner,"moneyline":_american(m.get("selected_price",m.get("wager_price",np.nan))) if m is not None else "","winner_probability":_number(m.get("ml_game_probability",m.get("model_probability",np.nan))) if m is not None else np.nan,"ou_prediction":f"{ou_side} {total:g}" if o is not None and pd.notna(total) else ou_side,"model_total":model_total,"ou_probability":_number(o.get("ou_game_probability",np.nan)) if o is not None else np.nan,"edge_bet":" | ".join(edge_labels),"has_edge":bool(edge_labels)})
+    return pd.DataFrame(rows)
+
+def write_full_slate(frame: pd.DataFrame, target: str, path: Path) -> None:
+    lines=[f"# MLB v2.9 full-slate predictions — {target}","","🟩 **EDGE** marks selections that passed the v2.9 edge filters.",""]
+    if frame.empty:
+        lines.append("No upcoming games were available.")
+    else:
+        view=frame.copy(); view["winner_probability"]=pd.to_numeric(view.winner_probability,errors="coerce").map(lambda x:f"{x:.1%}" if pd.notna(x) else ""); view["ou_probability"]=pd.to_numeric(view.ou_probability,errors="coerce").map(lambda x:f"{x:.1%}" if pd.notna(x) else ""); view["model_total"]=pd.to_numeric(view.model_total,errors="coerce").map(lambda x:f"{x:.1f}" if pd.notna(x) else ""); view["edge_bet"]=view.apply(lambda r:f"🟩 **EDGE — {r.edge_bet}**" if r.has_edge else "—",axis=1)
+        view=view.rename(columns={"game":"Game","predicted_winner":"Predicted winner","moneyline":"ML","winner_probability":"Win probability","ou_prediction":"O/U prediction","model_total":"Model total","ou_probability":"O/U probability","edge_bet":"Edge bets"})
+        lines.append(view[["Game","Predicted winner","ML","Win probability","O/U prediction","Model total","O/U probability","Edge bets"]].to_markdown(index=False))
+    lines.extend(["","Research output only; verify line freshness before acting.",""]); path.write_text("\n".join(lines),encoding="utf-8")
+
 def main() -> None:
     api_key=os.environ.get("THE_ODDS_API_KEY")
     if not api_key: raise SystemExit("THE_ODDS_API_KEY is not set in this Windows account.")
@@ -95,6 +142,7 @@ def main() -> None:
     output=ROOT/"output"; output.mkdir(exist_ok=True)
     for name,frame in outputs.items(): frame.to_csv(output/f"{name}.csv",index=False)
     card=build_card(outputs,target); card.to_csv(output/"edge_picks.csv",index=False); write_markdown(card,target,output/"EDGE_PICKS.md")
-    print(f"Finished {target}: {len(card)} edge pick(s).")
+    full=build_full_slate(outputs,target); full.to_csv(output/"all_game_predictions.csv",index=False); write_full_slate(full,target,output/"ALL_GAME_PREDICTIONS.md")
+    print(f"Finished {target}: {len(full)} games and {len(card)} edge pick(s).")
 
 if __name__=="__main__": main()
