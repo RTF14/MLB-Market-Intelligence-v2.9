@@ -74,7 +74,7 @@ jobs:
         if: always()
         uses: actions/upload-artifact@v6
         with:
-          name: mlb-v2-9-predictions-${{ github.run_number }}
+          name: mlb-v2-9-predictions-${{ github.run_number }}-attempt-${{ github.run_attempt }}
           path: output/
           if-no-files-found: warn
           retention-days: 30
@@ -87,6 +87,7 @@ jobs:
         if: success()
         uses: actions/upload-pages-artifact@v5
         with:
+          name: github-pages-${{ github.run_id }}-${{ github.run_attempt }}
           path: output/site
 
   deploy-dashboard:
@@ -100,3 +101,5 @@ jobs:
       - name: Publish results dashboard
         id: deployment
         uses: actions/deploy-pages@v5
+        with:
+          artifact_name: github-pages-${{ github.run_id }}-${{ github.run_attempt }}
